@@ -35,6 +35,18 @@ memory: 2048
 # tags:                         # Pass tags as key value pairs.
 #   project: project-name
 
+storage:
+  volumes:
+    n8n:
+      efs: true
+      path: /home/node/.n8n
+      readonly: false
+
+environments:
+  test:
+    variables:
+      VUE_APP_URL_BASE_API: https://xxxxxxxx.us-east-1.awsapprunner.com/
+
 # You can override any of the values defined above by environment.
 # environments:
 #   test:
