@@ -38,9 +38,7 @@ memory: 2048
 environments:
   test:
     variables:
-      N8N_HOST: xxxxxxxx.us-east-1.awsapprunner.com
-      N8N_PORT: 443
-      N8N_PROTOCOL: https
+      WEBHOOK_TUNNEL_URL: https://xxxxxxxxx.us-east-1.awsapprunner.com/
 
 # You can override any of the values defined above by environment.
 # environments:
