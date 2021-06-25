@@ -35,13 +35,6 @@ memory: 2048
 # tags:                         # Pass tags as key value pairs.
 #   project: project-name
 
-storage:
-  volumes:
-    n8n:
-      efs: true
-      path: /home/node/.n8n
-      readonly: false
-
 environments:
   test:
     variables:
